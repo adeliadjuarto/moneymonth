@@ -1,7 +1,7 @@
 <?php
 session_start();
  
-$logged_in = false;
+//$logged_in = false;
  
 //jika session username belum dibuat, atau session username kosong
 if (isset($_SESSION['username']) || !empty($_SESSION['username'])) {
@@ -82,17 +82,19 @@ if($_POST["submit"]){
 		          <img src="img/logo.png" >
 	           </div>
 	<div id="form_show_login" style="display:none">
-		<table style="margin:0 auto;">
-			<tr>
-				<td><input type="text" placeholder="Username or Email" class="forminput"></td>
-			</tr>
-			<tr>
-				<td><input type="password" placeholder="Password" class="forminput"></td>
-			</tr>
-			<tr>
-				<td><input type="submit" class="button_login" value="Login"></td>
-			</tr>
-		</table>
+        <form method="post" action="auth.php">
+            <table style="margin:0 auto;">
+                <tr>
+                    <td><input type="text" placeholder="Username or Email" class="forminput" name="username"></td>
+                </tr>
+                <tr>
+                    <td><input type="password" placeholder="Password" class="forminput" name="password"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" class="button_login" value="Login"></td>
+                </tr>
+            </table>
+        </form>
         
 	</div>
 </div>

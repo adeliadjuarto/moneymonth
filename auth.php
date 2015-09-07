@@ -26,7 +26,7 @@ if (empty($username) && empty($password)) {
     header('location:login.php?error=3');
     break;
 }
- 
+
 $query = mysql_query("select * from users where username='$username' and password='$password'");
  
 $data = mysql_fetch_array($query);
@@ -38,7 +38,7 @@ if (mysql_num_rows($query) == 1) {
     $_SESSION['role'] = $data['role'];
  
     // redirect ke halaman users [menampilkan semua users]
-    header('location:users.php');
+    header('location:index.php');//users.php');
 } else {
     // kalau username ataupun password tidak terdaftar di database
     header('location:login.php?error=4');
