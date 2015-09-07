@@ -13,7 +13,7 @@
 .clearfix:before, .clearfix:after { content: ''; display: table; }
 .clearfix:after { clear: both; }
 
-body {
+.login-body  {
 	background: #333;
 	color: #fff;
 	font-weight: 200;
@@ -21,24 +21,24 @@ body {
 	font-family: 'Raleway', 'Arial', sans-serif;
 }
 
-a {
+.login-body a {
 	color: #fff;
 	text-decoration: none;
 	outline: none;
 	font-weight: 600;
 }
 
-a:hover, a:focus {
+.login-body a:hover, a:focus {
 	color: #debcc3;
 }
 
-section {
+.login-body section {
 	padding: 1em;
 	text-align: center;
 }
 
 /* Header */
-.codrops-header {
+.login-body .codrops-header {
 	z-index: 1000;
 	position: absolute;
 	top: 50%;
@@ -51,14 +51,14 @@ section {
 	backface-visibility: hidden;
 }
 
-.codrops-header h1 {
+.login-body .codrops-header h1 {
 	margin: 0;
 	font-weight: 200;
 	font-size: 3em;
 	line-height: 1;
 }
 
-.codrops-header h1 span {
+.login-body .codrops-header h1 span {
 	display: block;
 	padding: 0.5em 0 0.6em 0.1em;
 	font-size: 40%;
@@ -67,7 +67,7 @@ section {
 }
 
 /* To Navigation Style */
-.codrops-top {
+.login-body .codrops-top {
 	width: 100%;
 	text-transform: uppercase;
 	font-weight: 400;
@@ -77,7 +77,7 @@ section {
 	z-index: 2000;
 }
 
-.codrops-top a {
+.login-body .codrops-top a {
 	display: inline-block;
 	padding: 0.3em 0.7em;
 	text-decoration: none;
@@ -85,16 +85,16 @@ section {
 	margin: 5px;
 }
 
-.codrops-top span.right {
+.login-body .codrops-top span.right {
 	float: right;
 }
 
-.codrops-top span.right a {
+.login-body .codrops-top span.right a {
 	display: block;
 	float: left;
 }
 
-.codrops-icon:before {
+.login-body .codrops-icon:before {
 	margin: 0 4px;
 	text-transform: none;
 	font-weight: normal;
@@ -106,21 +106,21 @@ section {
 	-webkit-font-smoothing: antialiased;
 }
 
-.codrops-icon-drop:before {
+.login-body .codrops-icon-drop:before {
 	content: "\e001";
 }
 
-.codrops-icon-prev:before {
+.login-body .codrops-icon-prev:before {
 	content: "\e004";
 }
 
 /* Demo Buttons Style */
-.codrops-demos {
+.login-body .codrops-demos {
 	padding-top: 2em;
 	font-size: 0.8em;
 }
 
-.codrops-demos a {
+.login-body .codrops-demos a {
 	display: inline-block;
 	margin: 0.5em;
 	padding: 0.7em 1.1em;
@@ -132,7 +132,7 @@ section {
 	width: 165px;
 }
 
-.codrops-demos a:hover,
+.login-body .codrops-demos a:hover,
 .codrops-demos a.current-demo,
 .codrops-demos a.current-demo:hover {
 	color: #debcc3;

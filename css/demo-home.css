@@ -1,0 +1,238 @@
+@font-face {
+	font-family: 'codropsicons';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/codropsicons/codropsicons.eot');
+	src: url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'), url('../fonts/codropsicons/codropsicons.woff') format('woff'), url('../fonts/codropsicons/codropsicons.ttf') format('truetype'), url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+}
+
+.demo-1 *,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.demo-1 .clearfix:before,
+.clearfix:after {
+	content: '';
+	display: table;
+}
+
+.demo-1 .clearfix:after {
+	clear: both;
+}
+
+.demo-1{
+	font-family: Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	color: #3b393d;
+	background: #f0f0f0;
+	background-size: cover;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	overflow: hidden;
+	overflow-y: scroll;
+}
+
+.demo-1 body.body--hidden {
+	overflow: hidden;
+}
+
+.demo-1 body.body--hidden .codrops-header,
+body.body--hidden .content--related {
+	opacity: 0;
+}
+
+.demo-1 .codrops-header,
+.content--related {
+	-webkit-transition: opacity 300ms ease-in-out;
+	transition: opacity 300ms ease-in-out;
+}
+
+.demo-1 a {
+	text-decoration: none;
+	color: #00BFFF;
+	outline: none;
+}
+
+.demo-1 a:hover,
+a:focus {
+	color: #3b393d;
+}
+
+.demo-2 a {
+	color: #7cc576;
+}
+
+.demo-3 {
+	background: #1b1b1b;
+}
+
+.demo-4 {
+	background: #acaad1;
+}
+
+.demo-4 a {
+	color: #6448a0;
+}
+
+.demo-4 .codrops-header h1 span {
+	color: #4f4c4c;
+}
+
+.demo-1 .hidden {
+	position: absolute;
+	overflow: hidden;
+	width: 0;
+	height: 0;
+	pointer-events: none;
+}
+/* Header */
+
+.demo-1 .codrops-header {
+	padding: 2em 1em;
+	text-align: center;
+}
+
+.demo-1 .codrops-header h1 {
+	font-size: 2.25em;
+	font-weight: 400;
+	line-height: 1.2;
+	margin: .5em 0 0;
+}
+
+.demo-1 .codrops-header h1 span {
+	font-size: .45em;
+	display: block;
+	padding: .5em 0 1em;
+	color: #999;
+}
+/* Top Navigation Style */
+
+.demo-1 .codrops-links {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.demo-1 .codrops-links::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 2px;
+	height: 100%;
+	margin-left: -1px;
+	background: #ddd;
+	-webkit-transform: rotate3d(0, 0, 1, 22.5deg);
+	transform: rotate3d(0, 0, 1, 22.5deg);
+}
+
+.demo-1 .codrops-icon {
+	display: inline-block;
+	width: 1.5em;
+	margin: .5em;
+	padding: 0em 0;
+	text-decoration: none;
+}
+
+.demo-1 .codrops-icon span {
+	display: none;
+}
+
+.demo-1 .codrops-icon:before {
+	font-family: 'codropsicons';
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	line-height: 1;
+	margin: 0 5px;
+	text-transform: none;
+	-webkit-font-smoothing: antialiased;
+
+	speak: none;
+}
+
+.demo-1 .codrops-icon--drop:before {
+	content: '\e001';
+}
+
+.demo-1 .codrops-icon--prev:before {
+	content: '\e004';
+}
+/* Demo links */
+
+.demo-1 .codrops-demos {
+	margin: 2em 0 0;
+}
+
+.demo-1 .codrops-demos a {
+	display: inline-block;
+	margin: 0 .5em;
+}
+
+.demo-1 .codrops-demos a.current-demo {
+	font-weight: bold;
+	color: #3b393d;
+}
+/* Content */
+
+.demo-1 .content {
+	padding: 1em 0 4em;
+}
+/* Related demos */
+
+.demo-1 .content--related {
+	font-weight: bold;
+	text-align: center;
+}
+
+.demo-1 .media-item {
+	display: inline-block;
+	padding: 1em;
+	vertical-align: top;
+	-webkit-transition: color .3s;
+	transition: color .3s;
+}
+
+.demo-1 .media-item__img {
+	max-width: 100%;
+	opacity: .3;
+	-webkit-transition: opacity .3s;
+	transition: opacity .3s;
+}
+
+.demo-1 .media-item:hover .media-item__img,
+.media-item:focus .media-item__img {
+	opacity: 1;
+}
+
+.demo-1 .media-item__title {
+	font-size: 1em;
+	margin: 0;
+	padding: .5em;
+}
+
+/* cards wrapper and close btn */
+
+.demo-1 .wrapper {
+	overflow: auto;
+	width: 95%;
+	max-width: 1366px;
+	margin: 0 auto;
+}
+
+.demo-1 @media screen and (max-width: 50em) {
+	.codrops-header {
+		padding: 3em 10% 4em;
+	}
+}
+
+.demo-1 @media screen and (max-width: 40em) {
+	.codrops-header h1 {
+		font-size: 2.4em;
+		line-height: 1.2;
+	}
+}
